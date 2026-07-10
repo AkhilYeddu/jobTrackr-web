@@ -78,8 +78,8 @@ const DashBoard = () => {
 
         <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4">
         <div className="card-body">
-            <h2 className="card-title font-bold text-xl">Swiggy</h2>
-            <p className="font-medium">Backend intern</p>
+            <h2 className="card-title font-bold text-xl">Groww</h2>
+            <p className="font-medium">SDE intern</p>
             <div className="justify-end card-actions">
                     <details className="dropdown ">
                         <summary className="btn m-1 btn-primary border rounded-xl cursor-pointer  hover:bg-white hover:text-black">Actions</summary>
