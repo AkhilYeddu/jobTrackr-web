@@ -4,7 +4,7 @@ const DashBoard = () => {
 
         <div className="applied m-5">
             <h3 className="font-semibold m-3">Applied - 3</h3>
-            <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4">
+            <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4 hover:border-white hover:border-1">
                 <div className="card-body">
                     <h2 className="card-title font-bold font-bold text-xl">Razorpay</h2>
                     <p className="font-medium">SDE intern</p>
@@ -21,7 +21,7 @@ const DashBoard = () => {
             </div>
         </div>
 
-        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4">
+        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4 hover:border-white hover:border-1">
                 <div className="card-body">
                     <h2 className="card-title font-bold font-bold text-xl">Zomato</h2>
                     <p className="font-medium">Front end intern</p>
@@ -38,7 +38,7 @@ const DashBoard = () => {
             </div>
         </div>
 
-        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4">
+        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4 hover:border-white hover:border-1">
                 <div className="card-body">
                     <h2 className="card-title font-bold font-bold text-xl">CRED</h2>
                     <p className="font-medium">Full stack intern</p>
@@ -60,7 +60,7 @@ const DashBoard = () => {
     </div>
     <div className="oa-screening m-5">
         <h3 className="font-semibold m-3">OA / Screening - 1</h3>
-        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4">
+        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4 hover:border-white hover:border-1">
         <div className="card-body">
             <h2 className="card-title font-bold text-xl">Swiggy</h2>
             <p className="font-medium">Backend intern</p>
@@ -76,7 +76,7 @@ const DashBoard = () => {
         </div>
         </div>
 
-        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4">
+        <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2 m-4 hover:border-white hover:border-1">
         <div className="card-body">
             <h2 className="card-title font-bold text-xl">Groww</h2>
             <p className="font-medium">SDE intern</p>
