@@ -64,7 +64,7 @@ const DashBoard = () => {
         <h3 className="font-semibold m-2">Offer - 1</h3>
         <div className="card w-96 bg-base-300 card-sm shadow-sm rounded-xl rounded-xl border-1 border-green-400 bg-green-900">
         <div className="card-body">
-            <h2 className="card-title text-green-400 font-bold text-xl">Meesho</h2>
+            <h2 className="card-title text-green-400 font-bold text-xl">Meesho!</h2>
             <p className="text-green-400 font-bold ">Offer Received</p>
             <div className="justify-end card-actions">
                     <details className="dropdown ">
