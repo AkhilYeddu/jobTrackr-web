@@ -1,4 +1,6 @@
+
 const DashBoard = () => {
+   
   return (
     <div className="dashboard grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
 
@@ -16,7 +18,7 @@ const DashBoard = () => {
                             <h3 className="font-bold text-lg">Razorpay</h3>
                             <p className="py-4">SDE intern</p>
 
-                            
+
                             <div className="modal-action">
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
