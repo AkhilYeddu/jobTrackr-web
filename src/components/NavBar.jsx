@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const NavBar = () => {
@@ -5,7 +6,7 @@ const NavBar = () => {
     <>
             <div className="navbar bg-base-200 shadow-sm">
     <div className="flex-1">
-        <a className="btn btn-ghost text-2xl font-extrabold">JobTrackr.</a>
+        <Link to="/"className="btn btn-ghost text-2xl font-extrabold">JobTrackr.</Link>
     </div>
     <div className="flex gap-3 p-2 items-center">
         <h3 className="m-3 text-xl">Welcome, User!</h3>
@@ -20,14 +21,28 @@ const NavBar = () => {
         </div>
         <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-300 border rounded-xl border-0 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-base-300 border rounded-xl border-0 rounded-box z-1 mt-3 w-52 p-2 shadow">     
+
             <li>
-            <a className="justify-between">
-                Profile
-                <span className="badge border rounded-4xl">New</span>
-            </a>
+                <Link to="/analytics"className="justify-between">
+                Analytics
+                
+                </Link>
             </li>
-            <li><a>Settings</a></li>
+
+            <li>
+                <Link to="/reminders"className="justify-between">
+                Reminders
+                <span className="badge border rounded-4xl">New</span>
+                </Link>
+            </li>
+
+            <li>
+                <Link to="/settings" className="justify-between">
+                Settings
+                </Link>
+            </li>
+
             <li><a>Logout</a></li>
         </ul>
         </div>
