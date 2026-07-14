@@ -112,22 +112,7 @@ const jobs = [
     notes: "System Design discussion.",
     link: "https://careers.cred.club"
   },
-  {
-    id: 9,
-    company: "Google",
-    role: "Software Engineer",
-    status: "Interview",
-    location: "Hyderabad",
-    appliedDate: "2026-06-15",
-    recruiter: "John Doe",
-    salary: "₹35 LPA",
-    jobType: "Full Time",
-    interviewDate: "2026-07-25",
-    interviewTime: "2:30 PM",
-    interviewRound: "Coding Round",
-    notes: "Revise Trees and Graphs.",
-    link: "https://careers.google.com"
-  },
+
   {
     id: 10,
     company: "Meesho",
