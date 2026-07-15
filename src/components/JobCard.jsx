@@ -3,18 +3,19 @@ const JobCard = (props) => {
     const{ jobData } = props;
     const { company, role, status} = jobData;
     console.log(jobData.status)
-    let borderClass = "";
-    if(jobData.status === "Interview"){
-        borderClass = "border border-blue-400"
-    }
-    if (jobData.status === "Offer") {
-        borderClass = "border border-green-400 bg-green-900"; 
-    }
+  
   return (
     <>
      
 
-     <div className={`card w-full bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4  hover:border-1 ${borderClass}`}>
+     <div className={`card w-full bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4  hover:border-1 ${
+        
+        status === "Interview" ?
+         "border border-blue-400"
+          : status === "Offer" 
+          ? "border border-green-400 bg-green-900" 
+          : null
+     }`}>
                 <div className="card-body">
                     <h2 className={`card-title font-bold text-xl ${
                         status === "Offer" ? "text-green-400" : null
