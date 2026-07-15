@@ -44,7 +44,11 @@ const DashBoard = () => {
         }
     </div>
 
+
+        <button className="btn btn-primary fixed right-6 bottom-20 rounded-full w-16 h-16 text-lg hover:bg-white hover:text-black">Add</button>
     </div>
+
+    
      
   )
 }

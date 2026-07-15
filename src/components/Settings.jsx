@@ -77,7 +77,7 @@ const Settings = () => {
           Delete Account
         </button>
 
-        <button className="btn btn-primary rounded-lg">
+        <button className="btn btn-primary rounded-lg hover:bg-white hover:text-black">
           Save Changes
         </button>
       </div>
