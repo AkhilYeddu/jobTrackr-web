@@ -21,7 +21,7 @@ const NavBar = () => {
         </div>
         <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-300 border rounded-xl border-0 rounded-box z-1 mt-3 w-52 p-2 shadow">     
+            className="menu menu-sm dropdown-content bg-base-300 border rounded-xl  rounded-box z-1 mt-3 w-52 p-2 shadow">     
 
             <li>
                 <Link to="/analytics"className="justify-between">

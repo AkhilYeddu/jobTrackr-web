@@ -1,12 +1,12 @@
 
 const JobCard = (props) => {
     const{ jobData } = props;
-    const { company, role, status} = jobData;
+    const { company, role, status, interviewDate, interviewTime} = jobData;
     console.log(jobData.status)
   return (
     <>
      
-     <div className={`card w-full bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4  hover:border-1 ${
+     <div className={`card w-full bg-base-300 card-sm shadow-sm rounded-xl transition-all duration-300 hover:-translate-y-2  m-4  hover:border ${
         status === "Interview" ?
          "border border-blue-400"
           : status === "Offer" 
@@ -21,7 +21,9 @@ const JobCard = (props) => {
                         status === "Offer" ? "text-green-400" : null
                     }`}>{role}</p>
                    {
-                    jobData.status === "Offer" ? <h1 className="text-green-400 font-bold">Offer received!</h1> : null
+                    status === "Offer" ?
+                     <h1 className="text-green-400 font-bold">Offer received!</h1> 
+                     : status === "Interview" ? <h1 className="text-blue-500 font-bold">On {interviewDate}, {interviewTime}</h1> : null 
                    }
                 <div className="justify-end card-actions">
                     {/* Open the modal using document.getElementById('ID').showModal() method */}
