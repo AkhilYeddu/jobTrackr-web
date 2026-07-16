@@ -1,5 +1,6 @@
 import jobs from "../utils/mockData"
 import JobCard from "./JobCard";
+import { Plus } from "lucide-react";
 
 const DashBoard = () => {
     const jobList = jobs;
@@ -45,7 +46,9 @@ const DashBoard = () => {
     </div>
 
 
-        <button className="btn btn-primary fixed right-6 bottom-20 rounded-full w-16 h-16 text-lg hover:bg-white hover:text-black">Add</button>
+        <button className="btn btn-primary fixed right-6 bottom-20 rounded-full w-16 h-16 text-lg hover:bg-white hover:text-black">
+            <Plus size={28}/>
+        </button>
     </div>
 
     

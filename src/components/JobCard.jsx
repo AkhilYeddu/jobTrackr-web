@@ -1,7 +1,7 @@
 
 const JobCard = (props) => {
     const{ jobData } = props;
-    const { company, role, status, interviewDate, interviewTime} = jobData;
+    const { company, role, status, interviewDate, interviewTime, appliedDate} = jobData;
     console.log(jobData.status)
   return (
     <>
@@ -32,12 +32,38 @@ const JobCard = (props) => {
                         }`} onClick={()=>document.getElementById('my_modal_1').showModal()}>Actions</button>
                         <dialog id="my_modal_1" className="modal">
                         <div className="modal-box">
-                            <h3 className="font-bold text-lg">Hello!</h3>
-                            <p className="py-4">Press ESC key or click the button below to close</p>
+                            <h3 className="font-bold text-lg">{company}</h3>
+                            <p className="py-1">{role}</p>
+                            <hr className="mb-5"></hr>
+                            <div className="flex items-center justify-end">
+                                        
+                                <p className="font-bold">Status: </p>
+                               <div className="dropdown dropdown-end">
+  <div tabIndex={0} role="button" className="btn m-1">
+    {status}
+  </div>
+
+  <ul
+    tabIndex={0}
+    className="dropdown-content menu bg-base-300 rounded-box z-[1] w-52 p-2 shadow"
+  >
+    <li><a>OA / Screening</a></li>
+    <li><a>Interview</a></li>
+    <li><a>Offer</a></li>
+  </ul>
+</div>
+                                            
+                            </div>
+                            
+                            <div className="flex items-center justify-end">
+                                <p className="font-bold">Applied On: </p>
+                                <p className="py-4 font-bold">{appliedDate}</p>
+                            </div>
+                            
                             <div className="modal-action">
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
-                                <button className="btn">Close</button>
+                                <button className="btn">Save Changes</button>
                             </form>
                             </div>
                         </div>

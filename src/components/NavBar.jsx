@@ -10,7 +10,7 @@ const NavBar = () => {
     </div>
     <div className="flex gap-3 p-2 items-center">
         <h3 className="m-3 text-xl">Welcome, User!</h3>
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end ">
             
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ">
             <div className="w-10 rounded-full">
@@ -21,7 +21,7 @@ const NavBar = () => {
         </div>
         <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-300 border rounded-xl  rounded-box z-1 mt-3 w-52 p-2 shadow">     
+            className="menu menu-sm dropdown-content bg-base-300 border border-base-100 rounded-xl  rounded-box z-1 mt-3 w-52 p-2 shadow">     
 
             <li>
                 <Link to="/analytics"className="justify-between">
